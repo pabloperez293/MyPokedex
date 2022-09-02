@@ -74,3 +74,15 @@ function createPokemon(pokemon) {
 // Con esto se puede ver los detalles de la api.
 fetchPokes(15)
 
+// seteamos elementos y eliminamos
+const elemento = document.querySelector("div")
+elemento.setAttribute("imagen" ,"name")
+
+elemento.onclick = function() {
+    this.parentElement.removeChild(this)
+}
+document.body.appendChild(elemento)
+
+
+
+// Eliminar pokemon 
